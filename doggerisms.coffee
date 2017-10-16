@@ -7,16 +7,21 @@ module.exports = (robot) ->
   doggerism = new Doggerism
 
   dog_actions = [
-    "exposes belly for rubs.",
-    "sniffs the air.",
-    "looks at you with puppy dog eyes."
+    "exposes belly for rubs",
+    "sniffs the air",
+    "looks at you with puppy dog eyes",
+    "whines expectantly",
+    "wags tail",
+    "prepares for snuggling",
+    "runs a circle around the table",
+    "pops ears up"
   ]
 
   dog_speech = [
     "Woof!",
     "Bork!"
   ]
-  robot.hear /(pupper|doggo|dogger|puppo)/i, (res) ->
+  robot.hear /(pupper|doggo|dogger|puppo|pup)/i, (res) ->
     dog_speak = doggerism.randomize_list(dog_speech)
     res.send "#{dog_speak}"
 
