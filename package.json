@@ -1,0 +1,25 @@
+{
+  "name": "hubot-doggerisms",
+  "description": "It's like mannerisms, but for dogs!",
+  "version": "0.0.1",
+  "author": "James Hale <james@jameshale.net>",
+  "license": "MIT",
+  "keywords": "hubot, hubot-scripts, dog",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jmhale/hubot-doggerisms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jmhale/hubot-doggy-daycare/issues"
+  },
+  "dependencies": {
+    "underscore": "*"
+  },
+  "peerDependencies": {
+    "hubot": "2.x"
+  },
+  "devDependencies": {
+    "hubot": "2.x"
+  },
+  "main": "doggerisms.coffee"
+}
