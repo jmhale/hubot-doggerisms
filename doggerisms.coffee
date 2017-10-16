@@ -27,4 +27,8 @@ module.exports = (robot) ->
     if adapter == "shell"
       res.send "#{dog_action}"
     else
-      robot.slack.chat.meMessage(channel=room, text=dog_action)
+      params = {
+        channel: "##{room}",
+        text: "#{dog_action}"
+      }
+      robot.slack.chat.meMessage(params)
