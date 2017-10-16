@@ -22,4 +22,9 @@ module.exports = (robot) ->
 
   robot.hear /good boy/i, (res) ->
     dog_action = doggerism.randomize_list(dog_actions)
-    res.send "/me #{dog_action}"
+    room = res.message.room
+    adapter = robot.adapterName
+    if adapter == "shell"
+      res.send "#{dog_action}"
+    else
+      robot.slack.chat.meMessage(channel=room, text=dog_action)
