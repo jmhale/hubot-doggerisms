@@ -28,7 +28,7 @@ module.exports = (robot) ->
       res.send "#{dog_action}"
     else
       params = {
-        channel: "##{room}",
-        text: "#{dog_action}"
+        channel: room,
+        text: dog_action
       }
       robot.slack.chat.meMessage(params)
