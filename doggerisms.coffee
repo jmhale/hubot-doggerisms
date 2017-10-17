@@ -17,7 +17,13 @@ module.exports = (robot) ->
     "pops ears up",
     "does a L O N G B O Y E",
     "does a sniff",
-    "does a bamboozle"
+    "does a bamboozle",
+    "sploots",
+    "chases tail",
+    "barks incessently for ten minutes",
+    "snuggles vigorously",
+    "looks for a treat"
+
   ]
 
   dog_speech = [
