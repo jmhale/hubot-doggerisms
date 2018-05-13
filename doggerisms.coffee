@@ -1,3 +1,5 @@
+#TODO: bamboozle picture on hearing 'bamboozle'
+
 class Doggerism
   randomize_list: (list) ->
     element = list[Math.floor(Math.random()*list.length)]
