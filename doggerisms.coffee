@@ -38,4 +38,4 @@ module.exports = (robot) ->
 
   robot.hear /good boy/i, (res) ->
     dog_action = doggerism.randomize_list(dog_actions)
-    res.send "#{dog_action}"
+    res.send "*#{dog_action}*"
